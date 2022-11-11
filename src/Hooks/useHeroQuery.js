@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from 'gatsby'
+import { useStaticQuery,graphql } from 'gatsby'
 
 export const useHeroQuery = () => {
 const data = useStaticQuery(graphql`
@@ -9,7 +9,7 @@ query HeroQuery {
       heroText
       heroImage {
         localFile {
-          childrenImageSharp {
+          childImageSharp {
             gatsbyImageData(width: 1920, layout: FULL_WIDTH, placeholder: TRACED_SVG)
           }
         }

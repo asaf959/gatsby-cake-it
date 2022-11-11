@@ -6,9 +6,6 @@ const Hamburger = ({ handleOverlayMenu }) => (
    <HamburgerButton onClick={handleOverlayMenu}>
     <img src={HamburgerIcon} alt="menu-hamburger" />
     </HamburgerButton>
-  // return (
-  //   <div>Hamburger</div>
-  // )
 )
 
 export default Hamburger

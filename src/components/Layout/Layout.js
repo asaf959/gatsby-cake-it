@@ -12,7 +12,7 @@ const handleOverlayMenu = () => setMenuOpen(prev => !prev)
   return (
     <>
     <GlobalStyles />
-    <Hamburger handleOverlayMenu={handleOverlayMenu} />\
+    <Hamburger handleOverlayMenu={handleOverlayMenu} />
     <OverlayMenu menuOpen={menuOpen} callback={handleOverlayMenu}/>
     <Header />
     <Primary>{children}</Primary>
