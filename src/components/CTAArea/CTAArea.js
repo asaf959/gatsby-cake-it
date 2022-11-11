@@ -5,7 +5,6 @@ import CTA from '../CTA/CTA'
 
 const CTAArea = () => {
 const { cta } = useCTAAreaQuery();
-console.log(cta)
 
   return (
     <Wrapper>
