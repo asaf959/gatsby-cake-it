@@ -7,7 +7,7 @@ import { Overlay } from './OverlayMenu.styles'
 const OverlayMenu = ({menuOpen, callback}) => {
 
   const { menu } = useMenuQuery()
-console.log(menu)
+
   return (
     <Overlay menuOpen={menuOpen}>
       <div className="inner">
@@ -23,7 +23,7 @@ console.log(menu)
             ) : null
           ))}
         </ul>
-        <div className="closeButton" onClick={callback} role="button" tabIndex="0">
+        <div className="closeButton" onClick={callback} role="button" tabIndex="0" onKeyDown={callback}>
           <img src={CloseButton} alt="close-button" />
         </div>
       </div>
