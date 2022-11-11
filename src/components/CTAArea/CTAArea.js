@@ -1,7 +1,7 @@
 import React from 'react'
 import { useCTAAreaQuery } from '../../Hooks/useCTAAreaQuery'
 import { Wrapper } from './CTAArea.styles'
-import CTA from '../CTA/CTA'
+import Cta from '../CTA/CTA'
 
 const CTAArea = () => {
 const { cta } = useCTAAreaQuery();
@@ -9,7 +9,7 @@ const { cta } = useCTAAreaQuery();
   return (
     <Wrapper>
       {new Array(3).fill("").map((element,i) => (
-        <CTA
+        <Cta
         key={i}
         image={
           cta.ACF_HomePage[`cta${i + 1}Image`].localFile.childImageSharp.gatsbyImageData
